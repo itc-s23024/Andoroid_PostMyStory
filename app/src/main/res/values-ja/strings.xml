@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PostMyStory</string>
+    <string name="caption_message">キャプションを入力してください</string>
+    <string name="post">投稿する</string>
+    <string name="nice_count">「いいね！」 %1$s</string>
+</resources>
