@@ -15,6 +15,11 @@ import coil.compose.AsyncImage
 import jp.ac.it_college.std.s23024.postmystory.ui.theme.PostMyStoryTheme
 
 class MainActivity : ComponentActivity() {
+
+    enum class Scene {
+        LIST, PHOTOS, CAPTION
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
