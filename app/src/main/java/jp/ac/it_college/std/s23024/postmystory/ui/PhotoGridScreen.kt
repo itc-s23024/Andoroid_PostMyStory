@@ -15,7 +15,7 @@ fun PhotoGridScreen(
     ) {
     val photos = mutableListOf<String>().apply {
         for (i in 1 .. 300) {
-            add("https://picsum.photo/seed/$i/200/200")
+            add("https://picsum.photos/seed/$i/200/200")
         }
     }
     LazyVerticalGrid(
@@ -30,5 +30,5 @@ fun PhotoGridScreen(
 @Preview
 @Composable
 fun PhotoGridScreenPreview() {
-    PhotoGridScreen()
+    PhotoGridScreen(onClick = { })
 }

@@ -20,13 +20,13 @@ import jp.ac.it_college.std.s23024.postmystory.model.Message
 @Composable
 fun ListScreen(
     modifier: Modifier = Modifier,
-    message: MutableList<Message>,
+    messages: MutableList<Message>,
     onClick: () -> Unit = {}
 ) {
    val state = rememberLazyListState()
     Box(modifier = Modifier) {
         LazyColumn(state = state) {
-            items(items = message) { message ->
+            items(items = messages) { message ->
                 ArticleView(message = message)
             }
         }
@@ -61,5 +61,5 @@ fun ListScreenPreview(modifier: Modifier = Modifier) {
             )
         }
     }
-    ListScreen(message = messages)
+    ListScreen(messages = messages)
 }
